@@ -25,7 +25,7 @@ public class TokenServiceImpl implements TokenService {
 
         return JWT.create()
                 .withIssuer("auth-service")
-                .withAudience("netflix_cline")
+                .withAudience("netflix_clone")
                 .withSubject(clientId)
                 .withIssuedAt(Date.from(now))
                 .withExpiresAt(Date.from(exp))
